@@ -12,7 +12,7 @@ keywords:
     - opencti
     - prometheus
 maintainers:
-    - name: Axel Fahy
+    - name: axelfahy
       email: axel@cyd.ch
       url: https://github.com/axelfahy
 type: application
