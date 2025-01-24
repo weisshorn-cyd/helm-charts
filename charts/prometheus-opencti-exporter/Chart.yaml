@@ -11,4 +11,8 @@ keywords:
     - metrics
     - opencti
     - prometheus
+maintainers:
+    - name: Axel Fahy
+      email: axel@cyd.ch
+      url: https://github.com/axelfahy
 type: application
