@@ -1,7 +1,7 @@
 apiVersion: v2
 name: prometheus-opencti-exporter
 description: Prometheus exporter for OpenCTI metrics
-version: 0.1.0
+version: 0.1.0-rc1
 appVersion: "0.1.0"
 home: https://github.com/weisshorn-cyd/opencti_exporter
 sources:
