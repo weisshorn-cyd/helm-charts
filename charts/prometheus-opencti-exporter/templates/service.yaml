@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "prometheus-opencti-exporter.fullname" . }}
+  labels:
+    {{- include "prometheus-opencti-exporter.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: exporter-port
+      protocol: TCP
+      name: {{ .Values.service.portName }}
+  selector:
+    {{- include "prometheus-opencti-exporter.selectorLabels" . | nindent 4 }}
