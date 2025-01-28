@@ -1,0 +1,6 @@
+---
+# Test adding environment variables
+
+opencti:
+  url: http://localhost:8080
+  token: f25e14de-9daa-11ef-97a3-03bdd8270110
