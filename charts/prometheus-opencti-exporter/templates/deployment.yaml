@@ -4,12 +4,12 @@ metadata:
   name: {{ include "prometheus-opencti-exporter.fullname" . }}
   labels:
     {{- include "prometheus-opencti-exporter.labels" . | nindent 4 }}
-  {{- with .Values.deployment.labels }}
+  {{- with .Values.deploymentLabels }}
     {{- toYaml . | nindent 4 }}
   {{- end }}
-  {{- with .Values.deployment.annotations }}
+  {{- with .Values.deploymentAnnotations }}
   annotations:
-    {{- toYaml . | nindent 8 }}
+    {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
   replicas: {{ .Values.replicaCount }}

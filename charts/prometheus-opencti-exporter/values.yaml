@@ -78,10 +78,10 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
-# This is for setting Kubernetes Annotations and Labels to a deployment.
-deployment:
-  annotations: {}
-  labels: {}
+# This is for setting Kubernetes Annotations to a Deployment.
+deploymentAnnotations: {}
+# This is for setting Kubernetes Labels to a Deployment.
+deploymentLabels: {}
 
 # This is for setting up a service more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/
 service:
