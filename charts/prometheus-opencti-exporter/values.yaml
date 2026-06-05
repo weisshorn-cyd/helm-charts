@@ -28,6 +28,10 @@ opencti:
     key: ""
   # OpenCTI token, when not stored in a secret
   token: ""
+  # Comma-separated list of entity types to monitor. If empty, don't filter on entity types
+  entityTypes: ""
+  # Comma-separated list of creator names to monitor. If empty, don't filter on creators
+  creators: ""
 
 # Additional Environment variables that will be passed into the exporter pod
 env: {}

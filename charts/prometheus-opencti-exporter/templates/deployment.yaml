@@ -59,6 +59,10 @@ spec:
             {{- else }}
               value: {{ .Values.opencti.token }}
             {{- end }}
+            - name: ENTITY_TYPES
+              value: {{ .Values.opencti.entityTypes }}
+            - name: CREATORS
+              value: {{ .Values.opencti.creators }}
             {{- if .Values.env }}
             {{- toYaml .Values.env | nindent 12 }}
             {{- end }}
