@@ -60,9 +60,9 @@ spec:
               value: {{ .Values.opencti.token }}
             {{- end }}
             - name: ENTITY_TYPES
-              value: {{ .Values.opencti.entityTypes }}
+              value: {{ .Values.opencti.entityTypes | quote }}
             - name: CREATORS
-              value: {{ .Values.opencti.creators }}
+              value: {{ .Values.opencti.creators | quote }}
             {{- if .Values.env }}
             {{- toYaml .Values.env | nindent 12 }}
             {{- end }}
