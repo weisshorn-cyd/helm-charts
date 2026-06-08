@@ -3,6 +3,28 @@ entries:
   prometheus-opencti-exporter:
   - apiVersion: v2
     appVersion: 0.7.0
+    created: "2026-06-08T06:40:07.500034748Z"
+    description: Prometheus exporter for OpenCTI metrics
+    digest: ff31578bc515923338a1197a6a673723f09cc349e6fd546e64afecaeb02ce4d9
+    home: https://github.com/weisshorn-cyd/opencti_exporter
+    keywords:
+    - exporter
+    - metrics
+    - opencti
+    - prometheus
+    maintainers:
+    - email: axel@cyd.ch
+      name: axelfahy
+      url: https://github.com/axelfahy
+    name: prometheus-opencti-exporter
+    sources:
+    - https://github.com/weisshorn-cyd/opencti_exporter
+    type: application
+    urls:
+    - https://github.com/weisshorn-cyd/helm-charts/releases/download/prometheus-opencti-exporter-0.3.1/prometheus-opencti-exporter-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 0.7.0
     created: "2026-06-05T11:52:34.516388536Z"
     description: Prometheus exporter for OpenCTI metrics
     digest: 3f81eb648f1c6132c7d1827f69fd49ad4763d563320edab06d17547141ab8aff
@@ -111,4 +133,4 @@ entries:
     urls:
     - https://github.com/weisshorn-cyd/helm-charts/releases/download/prometheus-opencti-exporter-0.1.0/prometheus-opencti-exporter-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-05T11:52:34.516405041Z"
+generated: "2026-06-08T06:40:07.500057361Z"
